@@ -1,0 +1,43 @@
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache & compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Giant dataset files and directories
+archive/
+*.npy
+
+# Archives and submission packages
+*.zip
+*.tar.gz
+*.rar
+
+# Temp / Lock files
+~$*
+.DS_Store
+Thumbs.db
+
+# Project backups and plans
+backup_docs/
+implementation_plan.md
+task.md
+walkthrough.md

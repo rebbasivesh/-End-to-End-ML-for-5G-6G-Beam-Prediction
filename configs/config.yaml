@@ -1,0 +1,22 @@
+data:
+  deepmimo_dataset_folder: "S:/CAPSTON/DeepMIMO_Dataset"
+  scenario: "O1_60"
+  user_row_first: 1
+  user_row_last: 1000
+  fallback_path: "S:/CAPSTON/archive/H_train_doppler.npy"
+
+training:
+  test_size: 0.2
+  random_state: 42
+  metrics_output: "outputs/metrics.json"
+
+models:
+  baseline: "models/rf_model.pkl"
+  xgboost: "models/xgb_model.pkl"
+  random_forest_params:
+    n_estimators: 100
+    max_depth: 10
+  xgboost_params:
+    n_estimators: 100
+    learning_rate: 0.1
+    max_depth: 6

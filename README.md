@@ -45,7 +45,6 @@ s:\CAPSTON\ (Repository Root)
 The project relies on realistic, ray-tracing derived **Channel State Information (CSI)** matrices rather than simplified ad-hoc signal models:
 1. **DeepMIMO CSI Dataset**: Channel state vectors derived from ray-tracing simulations (default scenario: `O1_60` outdoor street canyon). It maps physical user coordinates and multipath propagation variables directly to optimal beam vectors.
 2. **Local Fallback Data**: A dataset script generates realistic signal fading, blocker losses, and RSRP/SINR ratios to emulate DeepMIMO scenarios when Kaggle/cloud endpoints are offline.
-3. **Data Storage**: Large raw data arrays (`*.npy`) are kept in the ignored `archive/` directory to prevent repository bloat while remaining accessible locally to the training scripts.
 
 ---
 
